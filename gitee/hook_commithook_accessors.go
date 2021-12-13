@@ -2,7 +2,7 @@ package gitee
 
 import "time"
 
-func (c *CommitHook) getID() string {
+func (c *CommitHook) GetID() string {
 	if c == nil {
 		return ""
 	}
