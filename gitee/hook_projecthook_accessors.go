@@ -136,6 +136,30 @@ func (pj *ProjectHook) GetSvnUrl() string {
 	return pj.SvnUrl
 }
 
+func (pj *ProjectHook) GetGitHttpUrl() string {
+	if pj == nil {
+		return ""
+	}
+
+	return pj.GitHttpUrl
+}
+
+func (pj *ProjectHook) GetGitSshUrl() string {
+	if pj == nil {
+		return ""
+	}
+
+	return pj.GitSshUrl
+}
+
+func (pj *ProjectHook) GetGitSvnUrl() string {
+	if pj == nil {
+		return ""
+	}
+
+	return pj.GitSvnUrl
+}
+
 func (pj *ProjectHook) GetHomepage() string {
 	if pj == nil {
 		return ""

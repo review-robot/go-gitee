@@ -35,13 +35,12 @@ type UserHook struct {
 	Id        int32     `json:"id,omitempty"`
 	Name      string    `json:"name,omitempty"`
 	Email     string    `json:"email,omitempty"`
-	Username  string    `json:"username,omitempty"`
 	UserName  string    `json:"user_name,omitempty"`
 	Url       string    `json:"url,omitempty"`
 	Login     string    `json:"login,omitempty"`
 	AvatarUrl string    `json:"avatar_url,omitempty"`
 	HtmlUrl   string    `json:"html_url,omitempty"`
-	Type_     string    `json:"type,omitempty"`
+	Type     string    `json:"type,omitempty"`
 	SiteAdmin bool      `json:"site_admin,omitempty"`
 	Time      time.Time `json:"time,omitempty"`
 	Remark    string    `json:"remark,omitempty"`

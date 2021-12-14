@@ -89,7 +89,7 @@ func (pe *PushEvent) GetProject() *ProjectHook {
 }
 
 func (pe *PushEvent) GetUserID() int64 {
-	if pe == nil || pe.UserName == nil {
+	if pe == nil {
 		return 0
 	}
 

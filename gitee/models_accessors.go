@@ -266,12 +266,12 @@ func (cb *ContentBasic) GetLinks() string {
 	return cb.Links
 }
 
-func (cb *ContentBasic) GetType_() string {
+func (cb *ContentBasic) GetType() string {
 	if cb == nil {
 		return ""
 	}
 
-	return cb.Type_
+	return cb.Type
 }
 
 func (eb *EnterpriseBasic) GetID() int32 {
@@ -546,12 +546,12 @@ func (n *Namespace) GetID() int32 {
 	return n.Id
 }
 
-func (n *Namespace) GetType_() string {
+func (n *Namespace) GetType() string {
 	if n == nil {
 		return ""
 	}
 
-	return n.Type_
+	return n.Type
 }
 
 func (n *Namespace) GetName() string {
@@ -594,12 +594,12 @@ func (nm *NamespaceMini) GetID() int32 {
 	return nm.Id
 }
 
-func (nm *NamespaceMini) GetType_() string {
+func (nm *NamespaceMini) GetType() string {
 	if nm == nil {
 		return ""
 	}
 
-	return nm.Type_
+	return nm.Type
 }
 
 func (nm *NamespaceMini) GetName() string {
@@ -1417,12 +1417,12 @@ func (ub *UserBasic) GetReceivedEventsUrl() string {
 	return ub.ReceivedEventsUrl
 }
 
-func (ub *UserBasic) GetType_() string {
+func (ub *UserBasic) GetType() string {
 	if ub == nil {
 		return ""
 	}
 
-	return ub.Type_
+	return ub.Type
 }
 
 func (ub *UserBasic) GetEmail() string {
