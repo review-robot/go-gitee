@@ -176,7 +176,6 @@ func (p *PullRequestEvent) GetOrgRepo() (string, string) {
 	return p.GetRepository().GetOwnerAndRepo()
 }
 
-// GetPRAuthor return the PR author's login
 func (p *PullRequestEvent) GetPRAuthor() string {
 	return p.GetPullRequest().GetUser().GetLogin()
 }

@@ -171,7 +171,7 @@ func (ne *NoteEvent) GetPRNumber() int32 {
 }
 
 func (ne *NoteEvent) GetPRAuthor() string {
-	return ne.GetPullRequest().GetUser().Login
+	return ne.GetPullRequest().GetUser().GetLogin()
 }
 
 func (ne *NoteEvent) IsPROpen() bool {

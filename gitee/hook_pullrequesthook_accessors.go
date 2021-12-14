@@ -39,7 +39,7 @@ func (ph *PullRequestHook) GetPatchUrl() string {
 		return ""
 	}
 
-	return ph.DiffUrl
+	return ph.PatchUrl
 }
 
 func (ph *PullRequestHook) GetTitle() string {
@@ -278,9 +278,11 @@ func (ph *PullRequestHook) LabelsToSet() sets.String {
 	res := sets.NewString()
 
 	for _, v := range ph.GetLabels() {
-		if v.GetName() != "" {
-			res.Insert(v.GetName())
-		}
+		res.Insert(v.GetName())
+	}
+
+	if res.Has("") {
+		res.Delete("")
 	}
 
 	return res

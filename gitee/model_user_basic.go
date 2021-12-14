@@ -26,7 +26,7 @@ type UserBasic struct {
 	ReposUrl          string `json:"repos_url,omitempty"`
 	EventsUrl         string `json:"events_url,omitempty"`
 	ReceivedEventsUrl string `json:"received_events_url,omitempty"`
-	Type_             string `json:"type,omitempty"`
+	Type              string `json:"type,omitempty"`
 	SiteAdmin         bool   `json:"site_admin,omitempty"`
 	Email             string `json:"email,omitempty"`
 }

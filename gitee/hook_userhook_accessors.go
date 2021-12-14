@@ -26,14 +26,6 @@ func (u *UserHook) GetEmail() string {
 	return u.Email
 }
 
-func (u *UserHook) GetUsername() string {
-	if u == nil {
-		return ""
-	}
-
-	return u.Username
-}
-
 func (u *UserHook) GetUserName() string {
 	if u == nil {
 		return ""
@@ -79,7 +71,7 @@ func (u *UserHook) GetType() string {
 		return ""
 	}
 
-	return u.Type_
+	return u.Type
 }
 
 func (u *UserHook) GetSiteAdmin() bool {

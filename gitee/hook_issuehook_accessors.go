@@ -137,9 +137,11 @@ func (ih *IssueHook) LabelsToSet() sets.String {
 	res := sets.NewString()
 
 	for _, v := range ih.GetLabels() {
-		if v.GetName() != "" {
-			res.Insert(v.GetName())
-		}
+		res.Insert(v.GetName())
+	}
+
+	if res.Has("") {
+		res.Delete("")
 	}
 
 	return res
