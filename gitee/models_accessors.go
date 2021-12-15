@@ -34,7 +34,7 @@ func (bi *BasicInfo) GetUser() *UserBasic {
 	return bi.User
 }
 
-func (bi *BasicInfo) GetProject() *Project {
+func (bi *BasicInfo) GetRepo() *Project {
 	if bi == nil {
 		return nil
 	}
@@ -271,7 +271,7 @@ func (cb *ContentBasic) GetType() string {
 		return ""
 	}
 
-	return cb.Type
+	return cb.Type_
 }
 
 func (eb *EnterpriseBasic) GetID() int32 {
@@ -551,7 +551,7 @@ func (n *Namespace) GetType() string {
 		return ""
 	}
 
-	return n.Type
+	return n.Type_
 }
 
 func (n *Namespace) GetName() string {
@@ -599,7 +599,7 @@ func (nm *NamespaceMini) GetType() string {
 		return ""
 	}
 
-	return nm.Type
+	return nm.Type_
 }
 
 func (nm *NamespaceMini) GetName() string {
@@ -1422,7 +1422,7 @@ func (ub *UserBasic) GetType() string {
 		return ""
 	}
 
-	return ub.Type
+	return ub.Type_
 }
 
 func (ub *UserBasic) GetEmail() string {

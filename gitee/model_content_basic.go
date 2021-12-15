@@ -14,7 +14,7 @@ type ContentBasic struct {
 	Path        string `json:"path,omitempty"`
 	Size        string `json:"size,omitempty"`
 	Sha         string `json:"sha,omitempty"`
-	Type        string `json:"type,omitempty"`
+	Type_       string `json:"type,omitempty"`
 	Url         string `json:"url,omitempty"`
 	HtmlUrl     string `json:"html_url,omitempty"`
 	DownloadUrl string `json:"download_url,omitempty"`

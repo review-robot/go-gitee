@@ -71,7 +71,7 @@ func (u *UserHook) GetType() string {
 		return ""
 	}
 
-	return u.Type
+	return u.Type_
 }
 
 func (u *UserHook) GetSiteAdmin() bool {

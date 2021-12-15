@@ -40,7 +40,7 @@ type UserHook struct {
 	Login     string    `json:"login,omitempty"`
 	AvatarUrl string    `json:"avatar_url,omitempty"`
 	HtmlUrl   string    `json:"html_url,omitempty"`
-	Type     string    `json:"type,omitempty"`
+	Type_     string    `json:"type,omitempty"`
 	SiteAdmin bool      `json:"site_admin,omitempty"`
 	Time      time.Time `json:"time,omitempty"`
 	Remark    string    `json:"remark,omitempty"`
@@ -64,7 +64,7 @@ type CommitHook struct {
 
 // MilestoneHook : 里程碑信息
 type MilestoneHook struct {
-	Id           int32    `json:"id,omitempty"`
+	Id           int32     `json:"id,omitempty"`
 	HtmlUrl      string    `json:"html_url,omitempty"`
 	Number       int32     `json:"number,omitempty"`
 	Title        string    `json:"title,omitempty"`
