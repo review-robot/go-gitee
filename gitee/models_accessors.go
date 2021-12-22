@@ -1472,3 +1472,146 @@ func (ub *UserBasic) GetName() string {
 
 	return ub.Name
 }
+
+func (u *User) GetID() int32 {
+	if u == nil {
+		return 0
+	}
+
+	return u.Id
+}
+
+func (u *User) GetSiteAdmin() bool {
+	if u == nil {
+		return false
+	}
+
+	return u.SiteAdmin
+}
+
+func (u *User) GetLogin() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.Login
+}
+func (u *User) GetFollowingUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.FollowingUrl
+}
+
+func (u *User) GetGistsUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.GistsUrl
+}
+
+func (u *User) GetStarredUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.StarredUrl
+}
+
+func (u *User) GetSubscriptionsUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.SubscriptionsUrl
+}
+
+func (u *User) GetOrganizationsUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.OrganizationsUrl
+}
+
+func (u *User) GetReposUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.ReposUrl
+}
+
+func (u *User) GetEventsUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.EventsUrl
+}
+
+func (u *User) GetReceivedEventsUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.ReceivedEventsUrl
+}
+
+func (u *User) GetType() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.Type_
+}
+
+func (u *User) GetEmail() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.Email
+}
+
+func (u *User) GetAvatarUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.AvatarUrl
+}
+
+func (u *User) GetUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.Url
+}
+
+func (u *User) GetHtmlUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.HtmlUrl
+}
+
+func (u *User) GetFollowersUrl() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.FollowersUrl
+}
+
+func (u *User) GetName() string {
+	if u == nil {
+		return ""
+	}
+
+	return u.Name
+}

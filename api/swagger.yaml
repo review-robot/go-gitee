@@ -13995,6 +13995,8 @@ definitions:
         type: "string"
       created_at:
         type: "string"
+      action_type:
+        type: "string"
     description: "获取某个Pull Request的操作日志"
     example:
       icon: "icon"
